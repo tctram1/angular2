@@ -1,0 +1,45 @@
+<!-- Panel Heading -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{tableTitle}}
+    </div>
+
+
+    <!-- Panel Body -->
+    <div class="panel-body">
+        <div class="row">
+
+            <!-- Table Contents -->
+            <div class="table-responsive">
+                <table class="table">
+
+                    <!-- Table Head -->
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Title</th>
+                            <th>Artist</th>
+                            <th>Genre</th>
+                            <th>Year Released</th>
+                            <th>Product Price</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Table Body -->
+                    <tbody class="text-centered">
+                        <tr *ngFor="let musicInventory of musicInventory">
+                            <td>{{ musicInventory.productID }}</td>
+                            <td>{{ musicInventory.title }}</td>
+                            <td>{{ musicInventory.artist }}</td>
+                            <td>{{ musicInventory.genre }}</td>
+                            <td>{{ musicInventory.yearReleased }}</td>
+                            <td>{{ musicInventory.productPrice }}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
