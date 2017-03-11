@@ -1,0 +1,41 @@
+[
+    {
+            "productID": "00305",
+            "title": "iDios!",
+            "artist": "Green Day",
+            "genre": 1,
+            "yearReleased": "2013",
+            "productPrice": 11,
+            "imageName": "./app/assets/images/000305.jpg"
+        },
+
+        {
+            "productID": "022677",
+            "title": "Crash My Party",
+            "artist": "Luke Bryan",
+            "genre": 5,
+            "yearReleased": "2013",
+            "productPrice": 14,
+            "imageName": "./app/assets/images/022677.jpg"
+        },
+
+        {
+            "productID": "136488",
+            "title": "My Head Is an Animal",
+            "artist": "Of Monsters and Men",
+            "genre": 2,
+            "yearReleased": "2011",
+            "productPrice": 14,
+            "imageName": "./app/assets/images/136488.jpg"
+        },
+
+        {
+            "productID": "465222",
+            "title": "AM",
+            "artist": "Artic Monkeys",
+            "genre": 1,
+            "yearReleased": "2013",
+            "productPrice": 13,
+            "imageName": "./app/assets/images/465222.jpg"
+        }
+]
