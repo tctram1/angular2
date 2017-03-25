@@ -1,0 +1,56 @@
+<!-- Panel Heading -->
+<div class='panel panel-primary' *ngIf='productInventory'>
+    <div class='panel-heading'>
+        {{ tableTitle }}
+    </div>
+
+    <!-- Panel Body -->
+    <div class="panel-body">
+        <div class="row">
+            <div>
+                <table *ngFor="let productInventory of productInventory">
+                    <tr>
+                        <td class="col-md-1"></td>
+                        <td class="col-md-6"><h3>{{ productInventory.Product_Name }}</h3></td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-md-1"></td>
+                        <td class="col-md-6">
+                            <img [src]='productInventory.Product_ImageName'
+                                    [style.width.px]='imageWidth'
+                                    [style.margin.px]='imageMargin'>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-md-1"><b>SKU</b></td>
+                        <td class="col-md-6">{{ productInventory.SKU }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-md-1"><b>Product Description</b></td>
+                        <td class="col-md-6">{{ productInventory.Product_Description }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-md-1"><b>Color</b></td>
+                        <td class="col-md-6">{{ productInventory.Color }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-md-1"><b>Price</b></td>
+                        <td class="col-md-6">{{ productInventory.Price | currency:'USD':true:'1.2-2' }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--Back Button-->
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:220px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back to full inventory list
+        </a>
+    </div>
+</div>

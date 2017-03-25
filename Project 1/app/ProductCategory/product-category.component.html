@@ -1,0 +1,41 @@
+<!-- Panel Heading -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{tableTitle}}
+    </div>
+
+
+    <!-- Panel Body -->
+    <div class="panel-body">
+        <div class="row">
+
+            <!-- Table Contents -->
+            <div class="table-responsive">
+                <table class="table">
+
+                    <!-- Table Head -->
+                    <thead>
+                        <tr>
+                            <th>Category ID</th>
+                            <th>Category Name</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Table Body -->
+                    <tbody class="text-centered">
+                        <tr *ngFor="let productCategory of productCategory">
+                            <td>{{ productCategory.CatID }}</td>
+                            <td>
+                                <a [routerLink]="['/category', productCategory.CatID]">
+                                    {{ productCategory.CatName }}
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

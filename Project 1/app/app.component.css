@@ -1,0 +1,16 @@
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+
+body {
+    font-size: 1.5em;
+}
+
+
+.filterByPadding {
+    padding-left: 20px;
+}
